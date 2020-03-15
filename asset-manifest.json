@@ -1,27 +1,31 @@
 {
   "files": {
     "main.css": "/static/css/main.208661d5.chunk.css",
-    "main.js": "/static/js/main.ba4054b1.chunk.js",
-    "main.js.map": "/static/js/main.ba4054b1.chunk.js.map",
+    "main.js": "/static/js/main.0bbafbb8.chunk.js",
+    "main.js.map": "/static/js/main.0bbafbb8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c7bd52bf.js",
     "runtime-main.js.map": "/static/js/runtime-main.c7bd52bf.js.map",
-    "static/js/2.af0024bb.chunk.js": "/static/js/2.af0024bb.chunk.js",
-    "static/js/2.af0024bb.chunk.js.map": "/static/js/2.af0024bb.chunk.js.map",
+    "static/css/2.86738a03.chunk.css": "/static/css/2.86738a03.chunk.css",
+    "static/js/2.4707f189.chunk.js": "/static/js/2.4707f189.chunk.js",
+    "static/js/2.4707f189.chunk.js.map": "/static/js/2.4707f189.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a3de5bfb8049241e9748a759ccd1c11c.js": "/precache-manifest.a3de5bfb8049241e9748a759ccd1c11c.js",
+    "precache-manifest.5a771c6efbc499382454c48ecca8a47e.js": "/precache-manifest.5a771c6efbc499382454c48ecca8a47e.js",
     "service-worker.js": "/service-worker.js",
+    "static/css/2.86738a03.chunk.css.map": "/static/css/2.86738a03.chunk.css.map",
     "static/css/main.208661d5.chunk.css.map": "/static/css/main.208661d5.chunk.css.map",
-    "static/js/2.af0024bb.chunk.js.LICENSE.txt": "/static/js/2.af0024bb.chunk.js.LICENSE.txt",
+    "static/js/2.4707f189.chunk.js.LICENSE.txt": "/static/js/2.4707f189.chunk.js.LICENSE.txt",
     "static/media/avatar.webp": "/static/media/avatar.e9143b02.webp",
+    "static/media/avatar.jpeg": "/static/media/avatar.f8d76bb2.jpeg",
     "static/media/ntnu.jpg": "/static/media/ntnu.5a1a7773.jpg",
-    "static/media/ntu.png": "/static/media/ntu.8579452b.png",
-    "static/media/ocean.mp4": "/static/media/ocean.b1fc8446.mp4",
-    "static/media/worldmap.jpg": "/static/media/worldmap.51127b5a.jpg"
+    "static/media/ntu.png": "/static/media/ntu.1515a920.png",
+    "static/media/ocean.mp4": "/static/media/ocean.066e29a6.mp4",
+    "static/media/worldmap.jpg": "/static/media/worldmap.897efce0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c7bd52bf.js",
-    "static/js/2.af0024bb.chunk.js",
+    "static/css/2.86738a03.chunk.css",
+    "static/js/2.4707f189.chunk.js",
     "static/css/main.208661d5.chunk.css",
-    "static/js/main.ba4054b1.chunk.js"
+    "static/js/main.0bbafbb8.chunk.js"
   ]
 }
