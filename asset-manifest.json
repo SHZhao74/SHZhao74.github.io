@@ -1,31 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.208661d5.chunk.css",
-    "main.js": "/static/js/main.0bbafbb8.chunk.js",
-    "main.js.map": "/static/js/main.0bbafbb8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c7bd52bf.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c7bd52bf.js.map",
-    "static/css/2.86738a03.chunk.css": "/static/css/2.86738a03.chunk.css",
-    "static/js/2.4707f189.chunk.js": "/static/js/2.4707f189.chunk.js",
-    "static/js/2.4707f189.chunk.js.map": "/static/js/2.4707f189.chunk.js.map",
+    "main.css": "/static/css/main.138f643c.chunk.css",
+    "main.js": "/static/js/main.282106ab.chunk.js",
+    "main.js.map": "/static/js/main.282106ab.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.950576a1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.950576a1.js.map",
+    "static/js/2.c3d68a68.chunk.js": "/static/js/2.c3d68a68.chunk.js",
+    "static/js/2.c3d68a68.chunk.js.map": "/static/js/2.c3d68a68.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5a771c6efbc499382454c48ecca8a47e.js": "/precache-manifest.5a771c6efbc499382454c48ecca8a47e.js",
+    "precache-manifest.12aabdf36d2290b53629b51c6e268b0c.js": "/precache-manifest.12aabdf36d2290b53629b51c6e268b0c.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.86738a03.chunk.css.map": "/static/css/2.86738a03.chunk.css.map",
-    "static/css/main.208661d5.chunk.css.map": "/static/css/main.208661d5.chunk.css.map",
-    "static/js/2.4707f189.chunk.js.LICENSE.txt": "/static/js/2.4707f189.chunk.js.LICENSE.txt",
-    "static/media/avatar.webp": "/static/media/avatar.e9143b02.webp",
-    "static/media/avatar.jpeg": "/static/media/avatar.f8d76bb2.jpeg",
+    "static/css/main.138f643c.chunk.css.map": "/static/css/main.138f643c.chunk.css.map",
+    "static/js/2.c3d68a68.chunk.js.LICENSE.txt": "/static/js/2.c3d68a68.chunk.js.LICENSE.txt",
+    "static/media/avatar.jpeg": "/static/media/avatar.6c9af4b0.jpeg",
     "static/media/ntnu.jpg": "/static/media/ntnu.5a1a7773.jpg",
-    "static/media/ntu.png": "/static/media/ntu.1515a920.png",
+    "static/media/ntu.png": "/static/media/ntu.1a1d0071.png",
     "static/media/ocean.mp4": "/static/media/ocean.066e29a6.mp4",
     "static/media/worldmap.jpg": "/static/media/worldmap.897efce0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c7bd52bf.js",
-    "static/css/2.86738a03.chunk.css",
-    "static/js/2.4707f189.chunk.js",
-    "static/css/main.208661d5.chunk.css",
-    "static/js/main.0bbafbb8.chunk.js"
+    "static/js/runtime-main.950576a1.js",
+    "static/js/2.c3d68a68.chunk.js",
+    "static/css/main.138f643c.chunk.css",
+    "static/js/main.282106ab.chunk.js"
   ]
 }
