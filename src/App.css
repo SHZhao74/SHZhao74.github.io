@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #fbfbfb;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: #444;
+}
+.name, .description {
+  font-size: 5em;
+  color: rgba(255,255,255,0.8);
+  padding: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+@media (max-width: 650px) {
+  .name {
+    font-size:3em;
+  }
+  .description{
+    font-size: 2em;
+  }
+}
+.subtitle {
+  font-family: "Times New Roman", "Pacifico", cursive !important;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Background Video*/
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.hover-bigger .bigger {
+  transition-duration: 1s;
+  transform-origin: center center;
+}
+
+.hover-bigger:hover .bigger {
+  transform: scale(1.1, 1.1);
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.skill-section {
+  /* margin: 10px; */
+  padding: 20px;
+}
+.skill-container {
+  padding: 20px;
+  background-image: linear-gradient(
+    to right bottom,
+    #063c80,
+    rgba(102, 57, 41, 0.2),
+    #063c80
+  );
+}
+@media (max-width: 600px) {
+  .skill-section {
+    /* margin: 10px; */
+    padding: 10px;
+  }
+  .skill-container {
+    padding: 10px;
+  }
+}
+.skill-cell {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  /* margin: 10px; */
+  position: relative;
+  text-align: center;
+  /* margin: 2rem; */
+}
+.skill-cell > * {
+  max-width: 240px;
+  width: 100%;
+  height: 100%;
+}
+.skill-cell > svg {
+  stroke: url(#mygradient);
+}
+.skill-cell:before {
+  content: attr(data-name);
+  position: absolute;
+  font-weight: 200;
+  width: 100%;
+  top: 25%;
+  left: 0;
+  font-family: "Roboto";
+  font-size: 20px;
+}
+.skill-cell:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-weight: bold;
+  color: #666666;
+  letter-spacing: -1px;
+}
+.circle-bg {
+  fill: none;
+  stroke: rgba(100, 100, 100, 0.1);
+  stroke-width: 1.2;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 1.2;
+  /* stroke-linecap: round; */
+  animation: progress 1s ease-out forwards;
+}

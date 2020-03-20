@@ -1,0 +1,38 @@
+.work a:hover {
+    text-decoration: none;
+}
+.work {
+    width: 280px;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+    /* background-color: #2196f3 !important; */
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.work a {
+    padding-bottom: 10px;
+}
+.work img {
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    transition: all ease-in-out .3s;
+    vertical-align: middle;
+}
+.work:hover img {
+    transform: scale(1.1, 1.1) translateY(-50%);
+}
+.work h5 {
+    position: absolute;
+    bottom: 0;
+}
+
+.work-title {
+    font-size: 16px !important;
+    letter-spacing: 1.5px;
+    font-weight: 500 !important;
+    margin-bottom: 30px !important;
+}
