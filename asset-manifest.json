@@ -1,34 +1,34 @@
 {
   "files": {
     "main.css": "/static/css/main.86281957.chunk.css",
-    "main.js": "/static/js/main.c20e8e4e.chunk.js",
-    "main.js.map": "/static/js/main.c20e8e4e.chunk.js.map",
+    "main.js": "/static/js/main.d0075c6e.chunk.js",
+    "main.js.map": "/static/js/main.d0075c6e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.950576a1.js",
     "runtime-main.js.map": "/static/js/runtime-main.950576a1.js.map",
     "static/js/2.38e60ac6.chunk.js": "/static/js/2.38e60ac6.chunk.js",
     "static/js/2.38e60ac6.chunk.js.map": "/static/js/2.38e60ac6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.99f50b822b96bf07a1713bbd9319f3df.js": "/precache-manifest.99f50b822b96bf07a1713bbd9319f3df.js",
+    "precache-manifest.d0d89b8ba076adf14f36bdc9514e80ce.js": "/precache-manifest.d0d89b8ba076adf14f36bdc9514e80ce.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.86281957.chunk.css.map": "/static/css/main.86281957.chunk.css.map",
     "static/js/2.38e60ac6.chunk.js.LICENSE.txt": "/static/js/2.38e60ac6.chunk.js.LICENSE.txt",
     "static/media/avatar.jpeg": "/static/media/avatar.9218157e.jpeg",
-    "static/media/cbw.png": "/static/media/cbw.a0e964de.png",
+    "static/media/cbw.png": "/static/media/cbw.1d43f659.png",
     "static/media/gaya.png": "/static/media/gaya.9e142c06.png",
     "static/media/github.png": "/static/media/github.5d0fd658.png",
     "static/media/intro.png": "/static/media/intro.19da2078.png",
-    "static/media/lottery.png": "/static/media/lottery.15a24a0b.png",
+    "static/media/lottery.png": "/static/media/lottery.bf08ccd2.png",
     "static/media/ntnu.jpg": "/static/media/ntnu.5a1a7773.jpg",
     "static/media/ntu.png": "/static/media/ntu.1a1d0071.png",
-    "static/media/ocean.mp4": "/static/media/ocean.066e29a6.mp4",
-    "static/media/share.png": "/static/media/share.72294016.png",
-    "static/media/tronzo.png": "/static/media/tronzo.7e4199cf.png",
+    "static/media/ocean.mp4": "/static/media/ocean.fa55bc01.mp4",
+    "static/media/share.png": "/static/media/share.ece78ff1.png",
+    "static/media/tronzo.png": "/static/media/tronzo.d0dbaaba.png",
     "static/media/worldmap.jpg": "/static/media/worldmap.19dc8035.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.950576a1.js",
     "static/js/2.38e60ac6.chunk.js",
     "static/css/main.86281957.chunk.css",
-    "static/js/main.c20e8e4e.chunk.js"
+    "static/js/main.d0075c6e.chunk.js"
   ]
 }
