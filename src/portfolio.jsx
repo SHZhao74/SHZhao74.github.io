@@ -7,6 +7,8 @@ import {
     // Avatar, IconButton
 } from "@material-ui/core";
 // import LinkIcon from '@material-ui/icons/Link';
+import PhoneIphoneRoundedIcon from '@material-ui/icons/PhoneIphoneRounded';
+import DesktopWindowsRoundedIcon from '@material-ui/icons/DesktopWindowsRounded';
 
 import Section from './section';
 
@@ -74,6 +76,10 @@ function ListGenerator(data) {
                 <Paper elevation={3} className="work">
                     <img src={d.img} alt={d.name}/>
                 </Paper>
+                <div style={{display: 'flex', justifyContent:'center', marginBottom:'3px'}}>
+                    {d.phone ? <PhoneIphoneRoundedIcon style={{ color:'#444'}}/> : null}
+                    {d.pc ? <DesktopWindowsRoundedIcon style={{ color: '#444' }}/> : null}
+                </div>
                 <Typography align="center" component="h5" className="work-title"> {d.title}</Typography>
             </Link>
         </Grid>
@@ -83,13 +89,15 @@ const data = [
     {
         img: Intro,
         title: 'Intro. Web',
-        url: 'https://shzhao74.github.io'
+        url: 'https://shzhao74.github.io',
+        phone: true, pc: true,
         // tool: '',
     },
     {
         img: ShareMoto,
         title: '共享機車',
-        url: 'https://jessie-chang.github.io/web/'
+        url: 'https://jessie-chang.github.io/web/',
+        phone: false, pc: true,
     },
     {
         img: Tronzo,
@@ -97,19 +105,22 @@ const data = [
         tool: 'A platform to help emerging writers share their literary works.',
         url: 'http://tronzo.zsh.nctu.me',
         cols: 2,
+        phone: true, pc: true,
         // rows: 2
     },
     {
         img: Github,
         title: 'Working Record Generator',
         tool: 'A open source repo to save my time, and make life be better',
-        url: 'https://github.com/SHZhao74/WorkingRecordGenerator'
+        url: 'https://github.com/SHZhao74/WorkingRecordGenerator',
+        pc: true,
     },
     {
         img: CBW,
         title: 'Custimized Bottle Water',
         // tool: 'reactjs, nodejs, mongodb',
-        url: 'http://cbw.zsh.nctu.me/'
+        url: 'http://cbw.zsh.nctu.me/',
+        phone: true, pc: true,
     },
     {
         img: Lottery,
@@ -117,13 +128,15 @@ const data = [
         tool: 'A cram school lottery web app.',
         url: 'http://lottery.zsh.nctu.me/lottery/wangyao',
         cols: 2,
-        rows: 2
+        rows: 2,
+        phone: true,
     },
     {
         img: GAYA,
         title: 'GAYA 尬押',
         tool: 'a side project about parsing and searching Rythme',
-        url: 'http://gaya.zsh.nctu.me'
+        url: 'http://gaya.zsh.nctu.me',
+        pc: true,
     },
     // {
     //     img: tmp,
