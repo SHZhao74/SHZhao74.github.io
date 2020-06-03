@@ -1,3 +1,9 @@
+.work-root {
+    margin-bottom: 30px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .work a:hover {
     text-decoration: none;
 }
@@ -34,5 +40,4 @@
     font-size: 16px !important;
     letter-spacing: 1.5px;
     font-weight: 500 !important;
-    margin-bottom: 30px !important;
 }

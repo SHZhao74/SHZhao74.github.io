@@ -120,13 +120,15 @@ const data = [
     }
 ];
 const skill_rough_data = [
-    { name: 'Nodejs ', percent: 75 },
-    { name: 'Reactjs ', percent: 70 },
-    { name: 'MongoDB ', percent: 66 },
-    { name: 'PM', percent: 50 },
-    { name: 'AI', percent: 45 },
+    { name: 'Nodejs ', percent: 85 },
+    { name: 'Reactjs ', percent: 85 },
+    { name: 'MongoDB ', percent: 90 },
+    { name: 'PM', percent: 70 },
+    { name: 'Python', percent: 75 },
+    { name: 'AI', percent: 70 },
+    { name: 'Keras', percent: 60 },
 ]
-const SkillCell = ({ name, percent }) => <Grid item xs={12} sm={4} md={3}>
+const SkillCell = ({ name, percent }) => <Grid item xs={6} sm={4} md={3}>
     <div className='skill-cell' data-name={name} data-percent={percent + '%'}>
         <svg viewBox="0 0 36 36" class="">
             <path class="circle-bg"

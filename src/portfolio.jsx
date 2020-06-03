@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import {
     Grid,
     //GridList, GridListTile, GridListTileBar,
-    Paper, Typography, Link,
+    Paper, Typography, Link, Chip
     // Avatar, IconButton
 } from "@material-ui/core";
 // import LinkIcon from '@material-ui/icons/Link';
@@ -40,64 +40,55 @@ const useStyles = makeStyles(theme => ({
     },
     skilltree: {
         backgroundColor: 'white'
+    },
+    chips: {
+        display: 'flex',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+        '& > *': {
+            margin: theme.spacing(0.5)
+        }
     }
 }));
-// function ListItemGenerator(data) {
-//     return data.map(d => <ListItem>
-//         <ListItemAvatar>
-//             <Avatar>{d.avatar}</Avatar>
-//         </ListItemAvatar>
-//         <ListItemText>{d.text}</ListItemText>
-//     </ListItem>)
-// }
-// function ListGenerator(data) {
-//     const classes = useStyles();
-//     return data.map((d, i) =>
-//         <GridListTile key={i} cols={d.cols} rows={d.rows} className="hover-bigger">
-//             <img src={d.img} alt={d.title} />
-//             <GridListTileBar
-//                 title={d.title}
-//                 subtitle={d.tool}
-//                 actionIcon={
-//                     <IconButton aria-label={`info about ${d.title}`} className={classes.icon}>
-//                         <Link href={d.url} target="_blank" rel="noopener" color="white" style={{ height: '100%' }}>
-//                             <LinkIcon />
-//                         </Link>
-//                     </IconButton>
-//                 }
-//             />
-//         </GridListTile>
-//     )
-// }
+const Chips = ({ data, className }) => (<div className={className}>
+    {!!data && data.map((d, i) => <Chip
+        key={`chip-${d}-${i}`}
+        variant='outlined' color='primary' label={d} />)}
+</div>)
 function ListGenerator(data) {
-    return data.map((d,i) =>
-        <Grid key={`work${i}`} container xs={12} sm={6} md={4} justify="center">
-            <Link href={d.url} target="_blank" rel="noopener" color="#444" >
-                <Paper elevation={3} className="work">
-                    <img src={d.img} alt={d.name}/>
-                </Paper>
-                <div style={{display: 'flex', justifyContent:'center', marginBottom:'3px'}}>
-                    {d.phone ? <PhoneIphoneRoundedIcon style={{ color:'#444'}}/> : null}
-                    {d.pc ? <DesktopWindowsRoundedIcon style={{ color: '#444' }}/> : null}
-                </div>
-                <Typography align="center" component="h5" className="work-title"> {d.title}</Typography>
-            </Link>
+    const classes = useStyles()
+    return data.map((d, i) =>
+        <Grid
+            key={`work${i}`} container xs={12} sm={6} md={4} justify="center">
+            <div className='work-root'>
+                <Link href={d.url} target="_blank" rel="noopener" color="#444" >
+                    <Paper elevation={3} className="work">
+                        <img src={d.img} alt={d.name} />
+                    </Paper>
+                    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '3px' }}>
+                        {d.phone ? <PhoneIphoneRoundedIcon style={{ color: '#444' }} /> : null}
+                        {d.pc ? <DesktopWindowsRoundedIcon style={{ color: '#444' }} /> : null}
+                    </div>
+                    <Typography align="center" component="h5" className="work-title"> {d.title}</Typography>
+                </Link>
+                <Chips className={classes.chips} data={d.chips} />
+            </div>
         </Grid>
     )
 }
+const NodeJS = 'NodeJS',
+    ReactJS = 'ReactJS',
+    MongoDB = 'MongoDB',
+    ExpressJS = 'ExpressJS',
+    Nginx = 'Nginx',
+    Bootstraps = 'Bootstraps'
 const data = [
     {
         img: Intro,
         title: 'Intro. Web',
         url: 'https://shzhao74.github.io',
         phone: true, pc: true,
-        // tool: '',
-    },
-    {
-        img: ShareMoto,
-        title: '共享機車',
-        url: 'https://jessie-chang.github.io/web/',
-        phone: false, pc: true,
+        chips: [ReactJS, 'MaterialUI'],
     },
     {
         img: Tronzo,
@@ -106,21 +97,7 @@ const data = [
         url: 'http://tronzo.zsh.nctu.me',
         cols: 2,
         phone: true, pc: true,
-        // rows: 2
-    },
-    {
-        img: Github,
-        title: 'Working Record Generator',
-        tool: 'A open source repo to save my time, and make life be better',
-        url: 'https://github.com/SHZhao74/WorkingRecordGenerator',
-        pc: true,
-    },
-    {
-        img: CBW,
-        title: 'Custimized Bottle Water',
-        // tool: 'reactjs, nodejs, mongodb',
-        url: 'http://cbw.zsh.nctu.me/',
-        phone: true, pc: true,
+        chips: [NodeJS, MongoDB, ReactJS, ExpressJS, Nginx, 'GCP'],
     },
     {
         img: Lottery,
@@ -130,6 +107,30 @@ const data = [
         cols: 2,
         rows: 2,
         phone: true,
+        chips: [NodeJS, ExpressJS, 'JQuery', MongoDB, 'Pug']
+    },
+    {
+        img: ShareMoto,
+        title: '共享機車',
+        url: 'https://jessie-chang.github.io/web/',
+        phone: false, pc: true,
+        chips: ['Sass', 'JQuery']
+    },
+    {
+        img: Github,
+        title: 'Working Record Generator',
+        tool: 'A open source repo to save my time, and make life be better',
+        url: 'https://github.com/SHZhao74/WorkingRecordGenerator',
+        pc: true,
+        chips: [NodeJS]
+    },
+    {
+        img: CBW,
+        title: 'Custimized Bottle Water',
+        // tool: 'reactjs, nodejs, mongodb',
+        url: 'http://cbw.zsh.nctu.me/',
+        phone: true, pc: true,
+        chips: [NodeJS, ExpressJS, 'MVC', Bootstraps]
     },
     {
         img: GAYA,
@@ -137,6 +138,7 @@ const data = [
         tool: 'a side project about parsing and searching Rythme',
         url: 'http://gaya.zsh.nctu.me',
         pc: true,
+        chips: [NodeJS, ExpressJS, 'Web Crawler', 'NLP', Bootstraps]
     },
     // {
     //     img: tmp,
@@ -146,7 +148,7 @@ const data = [
 ];
 
 export default function Experience() {
-    const classes = useStyles();
+    // const classes = useStyles();
     return (
         <Section style={{
             // height: 'auto',
