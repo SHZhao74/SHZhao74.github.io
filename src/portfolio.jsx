@@ -88,7 +88,7 @@ const data = [
         title: 'Intro. Web',
         url: 'https://shzhao74.github.io',
         phone: true, pc: true,
-        chips: [ReactJS, 'MaterialUI'],
+        chips: [ReactJS, 'Material-UI'],
     },
     {
         img: Tronzo,
@@ -108,6 +108,14 @@ const data = [
         rows: 2,
         phone: true,
         chips: [NodeJS, ExpressJS, 'JQuery', MongoDB, 'Pug']
+    },
+    {
+        img: GAYA,
+        title: 'GAYA 尬押',
+        tool: 'a side project about parsing and searching Rythme',
+        url: 'http://gaya.zsh.nctu.me',
+        pc: true,
+        chips: [NodeJS, ExpressJS, 'Web Crawler', 'NLP', Bootstraps]
     },
     {
         img: ShareMoto,
@@ -131,14 +139,6 @@ const data = [
         url: 'http://cbw.zsh.nctu.me/',
         phone: true, pc: true,
         chips: [NodeJS, ExpressJS, 'MVC', Bootstraps]
-    },
-    {
-        img: GAYA,
-        title: 'GAYA 尬押',
-        tool: 'a side project about parsing and searching Rythme',
-        url: 'http://gaya.zsh.nctu.me',
-        pc: true,
-        chips: [NodeJS, ExpressJS, 'Web Crawler', 'NLP', Bootstraps]
     },
     // {
     //     img: tmp,
